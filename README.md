@@ -1,1 +1,3 @@
-"# my-cv" 
+- HTML, CSS, JS cơ bản
+- Animation
+- Responsive
