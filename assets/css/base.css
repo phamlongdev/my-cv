@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f0ef;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+ion-icon {
+  pointer-events: none;
+}

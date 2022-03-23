@@ -1,0 +1,57 @@
+@keyframes label-load {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sidebar-load {
+  from {
+    opacity: 0.7;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes section-title {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.label {
+  transform-origin: 100% 50%;
+  animation: label-load ease-in-out 1s;
+}
+
+.section__main__education__title {
+  animation: section-title ease-in-out 1s;
+}
+
+.section__main__education__content {
+  animation: label-load ease-in-out 1s;
+}
+
+.section__main__experience__title {
+  animation: section-title ease-in-out 1s;
+}
+
+.section__main__experience__content {
+  animation: label-load ease-in-out 1s;
+}
+
+.sidebar__main {
+  animation: sidebar-load ease-in-out 0.8s;
+}
+
+.sidebar__footer {
+  animation: sidebar-load ease-in-out 0.8s;
+}

@@ -1,0 +1,201 @@
+.section {
+  z-index: 0;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__header {
+  width: 100%;
+  min-height: 300px;
+}
+
+.section__header--mobile {
+  display: none;
+}
+
+.section__header--mobile__avatar {
+  margin: 30px 0 0 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50% 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: rotate(45deg);
+  border: 4px solid #ff6500;
+  background-color: #ff6500;
+}
+
+.section__header--mobile__avatar__img {
+  width: 120%;
+  transform: rotate(-45deg);
+}
+
+.section__header--mobile__info {
+  margin: 60px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__header--mobile__info__username {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ff6500;
+}
+
+.section__header--mobile__info__job {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ff6500;
+}
+
+.section__main {
+  width: 100%;
+  flex: 1;
+}
+
+.section__main__education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__main__education__title {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+  text-transform: uppercase;
+  padding: 0 30px 0 0;
+  background-color: #ff6500;
+}
+
+.section__main__education__content {
+  width: 90%;
+  padding: 10px 0 10px 10px;
+}
+
+.section__main__education__content__row {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section__main__education__content__row__dot {
+  margin-right: 10px;
+  width: 20px;
+  height: 15px;
+  background-color: #ff6500;
+}
+
+.section__main__education__content__row__text {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.section__main__experience {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__main__experience__title {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+  text-transform: uppercase;
+  padding: 0 30px 0 0;
+  background-color: #ff6500;
+}
+
+.section__main__experience__content {
+  width: 90%;
+  padding: 10px 0 10px 10px;
+}
+
+.section__main__experience__content__row {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section__main__experience__content__row__dot {
+  margin-right: 10px;
+  width: 20px;
+  height: 15px;
+  background-color: #ff6500;
+}
+
+.section__main__experience__content__row__text {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.section__footer {
+  width: 100%;
+  height: 20px;
+  background-color: #ff6500;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+
+  .section__header {
+    height: fit-content;
+  }
+
+  .section__header--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section__main__education__title {
+    width: 100%;
+    justify-content: center;
+    padding: unset;
+  }
+
+  .section__main__education__content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .section__main__experience__title {
+    width: 100%;
+    justify-content: center;
+    padding: unset;
+  }
+
+  .section__main__experience__content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .section__footer {
+    margin-top: 100px;
+  }
+}
